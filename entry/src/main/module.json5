@@ -32,14 +32,56 @@
         "skills": [
           {
             "entities": [
-              "entity.system.home"
+              "entity.system.home",
+              "entity.system.browsable"
             ],
             "actions": [
-              "action.system.home"
-            ]
+              "action.system.home",
+              "ohos.want.action.viewData"
+            ],
+            "uris": [
+              {
+                "scheme": "qqopenapi",
+                // 接收 QQ 回调数据
+                "host": "102766460",
+                // 业务申请的互联 appId
+                "pathRegex": "\\b(auth|share)\\b",
+                "linkFeature": "Login",
+              },
+              {
+                // scheme须配置为https
+                "scheme": "https",
+                // host须配置为关联的域名
+                "host": "mvn.mob.com"
+              }
+            ],
+            "domainVerify": true
           }
         ]
       }
+    ],
+    "querySchemes": [
+      //sinaweibo
+      "sinaweibo",
+      //qq
+      "https",
+      "qqopenapi",
+      //wx
+      "weixin",
+      //dy
+      "snssdk1128",
+      "douyinopensdk",
+      //zfb
+      "alipayshare",
+      //xhs
+      "xhsdiscover",
+      //kuaishou
+      "kwai",
+      "ksnebula",
+      //dingding
+      "dingtalk",
+      //fs
+      "lark"
     ]
   }
 }

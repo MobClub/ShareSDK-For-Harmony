@@ -1,4 +1,5 @@
 {
+  "modelVersion": "5.0.4",
   "name": "sharesdkdemo",
   "version": "1.0.0",
   "description": "Please describe the basic information.",
@@ -6,9 +7,8 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "@yyz116/jsbn": "^1.0.1",
-    "@mobsdk/sharesdk": "^1.0.0",
-    "@mobsdk/mobcore": "^1.0.0"
+    "@zztsdk/zztcore": "^2024.12.11",
+    "@zztsdk/sharesdk": "^2.0.9"
   },
   "devDependencies": {
     "@ohos/hypium": "1.0.16",

@@ -5,6 +5,9 @@
   "main": "",
   "author": "",
   "license": "",
-  "dependencies": {}
+  "dependencies": {
+    "core": "file:lib/WeiboSDK.har",
+    "shareoutersdk": "file:lib/Alipay-1.0.0.har"
+  }
 }
 
